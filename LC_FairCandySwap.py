@@ -4,7 +4,7 @@ class Solution(object):
         :type A: List[int]
         :type B: List[int]
         :rtype: List[int]
-        :time comlexity: O(n)
+        :time comlexity: O(len(A)+len(B))
         :space complexity: O(1)
         """
         sum_A = sum(A)
