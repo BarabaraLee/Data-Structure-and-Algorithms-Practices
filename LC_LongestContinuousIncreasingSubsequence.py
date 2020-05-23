@@ -20,3 +20,4 @@ class Solution(object):
                 current_len = 1
                 
         return global_len
+    
