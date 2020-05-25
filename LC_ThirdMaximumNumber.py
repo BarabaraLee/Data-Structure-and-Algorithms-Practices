@@ -16,3 +16,4 @@ class Solution(object):
                 maxx_lst.append(maxx)
             
         return min(maxx_lst) if len(maxx_lst) == 3 else max(maxx_lst)
+    
