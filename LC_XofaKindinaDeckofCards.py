@@ -3,6 +3,8 @@ class Solution(object):
         """
         :type deck: List[int]
         :rtype: bool
+        :time complexity: ???
+        :space complexity: O(n)
         """
         d={}
         for x in deck:
