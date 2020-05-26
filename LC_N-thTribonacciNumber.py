@@ -3,6 +3,8 @@ class Solution(object):
         """
         :type n: int
         :rtype: int
+        :time complexity: O(n)
+        :space complexity: O(1)
         """
         
         Tprev3 = 0
