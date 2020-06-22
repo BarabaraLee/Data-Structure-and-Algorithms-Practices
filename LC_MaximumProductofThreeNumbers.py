@@ -3,6 +3,8 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: int
+        :time complexity: O(n)
+        :space complexity: O(1)
         """
         import sys
             
@@ -10,18 +12,18 @@ class Solution(object):
         min1, min2 = sys.maxsize, sys.maxsize
         
         for x in nums:
-            if x > max1:
+            if x >= max1:
                 max1, max2, max3 = x, max1, max2
                 
-            elif x< max1 and x > max2:
+            elif x< max1 and x >= max2:
                 max2, max3 = x, max2
                 
-            elif x< max2 and x > max3:
+            elif x< max2 and x >= max3:
                 max3 = x
                 
-            if x < min1:
+            if x <= min1:
                 min1, min2 = x, min1
-            elif x > min1 and x < min2:
+            elif x > min1 and x <= min2:
                 min2 = x
                     
         return max(max1*max2*max3, max1*min1*min2)
