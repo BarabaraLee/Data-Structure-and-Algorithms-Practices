@@ -3,6 +3,8 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: int
+        :time complexity: O(n)
+        :space complexity: O(n)
         """
         s = set()
         
