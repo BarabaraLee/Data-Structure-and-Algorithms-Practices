@@ -4,8 +4,8 @@ class Solution(object):
         :type s: str
         :type t: str
         :rtype: str
-        :time :
-        ::
+        :time complexity: O(n*log(n))
+        :space complexity: O(1)
         """
         s = sorted(s)
         t = sorted(t)
