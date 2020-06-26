@@ -4,6 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :type k: int
         :rtype: bool
+        :time complexity: O(n)
+        :space complexity: O(n)
         """
         lookup = {}
         
