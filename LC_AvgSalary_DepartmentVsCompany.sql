@@ -42,9 +42,9 @@ FROM
     ON s.employee_id = e.employee_id
     GROUP BY e.department_id, LEFT(s.pay_date, 7)) t1
 INNER JOIN
-    (SELECT LEFT(ss.pay_date, 7) pay_month, AVG(ss.amount) c_avg_amt
-     FROM salary ss
-     GROUP BY LEFT(ss.pay_date, 7)
+    (SELECT LEFT(pay_date, 7) pay_month, AVG(amount) c_avg_amt
+     FROM salary
+     GROUP BY LEFT(pay_date, 7)
     ) t2
 ON t1.pay_month = t2.pay_month
 ORDER BY t1.pay_month DESC, t1.department_id;
